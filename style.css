@@ -1,0 +1,106 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container Box */
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Inputs and Buttons */
+input[type="email"],
+input[type="password"],
+input[type="text"],
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+input:focus {
+  border-color: #667eea;
+  background-color: #fff;
+}
+
+/* Buttons */
+button {
+  background-color: #667eea;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #5a67d8;
+}
+
+/* Chat Box */
+#chat-box {
+  height: 300px;
+  overflow-y: auto;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+#chat-box div {
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: #e2e8f0;
+  border-radius: 6px;
+  word-wrap: break-word;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+    border-radius: 0.8rem;
+  }
+
+  #chat-box {
+    height: 200px;
+  }
+}
